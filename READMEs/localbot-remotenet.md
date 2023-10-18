@@ -22,9 +22,24 @@ This example uses Sapphire testnet; you can modify envvars to run on Sapphire ma
 
 ## Install Bot
 
-The predictoor & trader bots run code that lives in `pdr-backend` repo.
+Here are instructions to install this repo from source.
 
-[Install pdr-backend](install.md).
+In a new console:
+
+# clone the repo and enter into it
+git clone https://github.com/oceanprotocol/pdr-backend
+cd pdr-backend
+
+# Create & activate virtualenv
+python -m venv venv
+source venv/bin/activate
+
+# Install modules in the environment
+pip install -r requirements.txt
+If you're running MacOS, then also do in the same console:
+
+codesign --force --deep --sign - venv/sapphirepy_bin/sapphirewrapper-arm64.dylib
+
 
 ## Set Envvars
 
