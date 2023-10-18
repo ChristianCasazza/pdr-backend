@@ -23,9 +23,11 @@ This example uses Sapphire testnet; you can modify envvars to run on Sapphire ma
 ## Install Bot
 
 Here are instructions to install this repo from source.
+Here are instructions to install this repo from source.
 
 In a new console:
 
+```console
 # clone the repo and enter into it
 git clone https://github.com/oceanprotocol/pdr-backend
 cd pdr-backend
@@ -36,10 +38,12 @@ source venv/bin/activate
 
 # Install modules in the environment
 pip install -r requirements.txt
+```
+
 If you're running MacOS, then also do in the same console:
-
+```console
 codesign --force --deep --sign - venv/sapphirepy_bin/sapphirewrapper-arm64.dylib
-
+```
 
 ## Set Envvars
 
